@@ -1,0 +1,418 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.4.使用 MCUXpresso Config Tools 生成代码 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Debug.html" />
+    
+    
+    <link rel="prev" href="SDKDownload.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    1.MCU 集成开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../KeilIDE.html">
+            
+                <a href="../KeilIDE.html">
+            
+                    
+                    2.基于 NXP 的 Keil 开发环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Keil/KeilDownload.html">
+            
+                <a href="../Keil/KeilDownload.html">
+            
+                    
+                    2.1.下载并安装 Keil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Keil/SDKDownload.html">
+            
+                <a href="../Keil/SDKDownload.html">
+            
+                    
+                    2.2.下载 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Keil/ARMPackage.html">
+            
+                <a href="../Keil/ARMPackage.html">
+            
+                    
+                    2.3.下载 Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Keil/Code.html">
+            
+                <a href="../Keil/Code.html">
+            
+                    
+                    2.4.HelloWorld 示例代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../IARIDE.html">
+            
+                <a href="../IARIDE.html">
+            
+                    
+                    3.基于 NXP 的 IAR 开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../MCUXpressoIDE.html">
+            
+                <a href="../MCUXpressoIDE.html">
+            
+                    
+                    4.基于 NXP 的 MCUXpresso 开发环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="MCUXpressoIDEDownload.html">
+            
+                <a href="MCUXpressoIDEDownload.html">
+            
+                    
+                    4.1.下载并安装 MCUXpresso IDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="MCUXpressoToolsDownload.html">
+            
+                <a href="MCUXpressoToolsDownload.html">
+            
+                    
+                    4.2.下载并安装 MCUXpresso Config Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="SDKDownload.html">
+            
+                <a href="SDKDownload.html">
+            
+                    
+                    4.3.下载 MCUXpresso SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="MCUConfigToolsUserManual.html">
+            
+                <a href="MCUConfigToolsUserManual.html">
+            
+                    
+                    4.4.使用 MCUXpresso Config Tools 生成代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Debug.html">
+            
+                <a href="Debug.html">
+            
+                    
+                    4.5.使用 MCUXpresso IDE 调试代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >4.4.使用 MCUXpresso Config Tools 生成代码</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><img src="../../imgs/wpiLogo.jpg" alt="wpiLogo"></p>
+<h1 id="44&#x4F7F;&#x7528;-mcuxpresso-config-tools-&#x751F;&#x6210;&#x65F6;&#x949F;&#x6E90;&#x4EE3;&#x7801;">4.4.&#x4F7F;&#x7528; MCUXpresso Config Tools &#x751F;&#x6210;&#x65F6;&#x949F;&#x6E90;&#x4EE3;&#x7801;</h1>
+<hr>
+<p><strong>&#x6253;&#x5F00; MCUXpresso Config Tools,&#x8BE5;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x5728;&#x73B0;&#x6709;&#x7684;&#x793A;&#x4F8B;&#x4E0A;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#xFF0C;&#x4F46;&#x5728;&#x8FD9;&#x91CC;&#x9009;&#x62E9;&#x4E3A;&#x5904;&#x7406;&#x5668;&#xFF0C;&#x7535;&#x8DEF;&#x677F;&#xFF0C;&#x548C;&#x5957;&#x4EF6;&#x521B;&#x5EFA;&#x65B0;&#x914D;&#x7F6E;&#xFF0C;&#x70B9;&#x51FB;&#x4E0B;&#x4E00;&#x6B65;</strong></p>
+<p><img src="../../imgs/MCUConfigTools/uMCUConfigTools1.jpg" alt="uMCUConfigTools1"></p>
+<p><strong>&#x662F;&#x5426;&#x5BFC;&#x5165;&#x914D;&#x7F6E;&#xFF0C;&#x9009;&#x62E9;&#x5426;</strong></p>
+<p><img src="../../imgs/MCUConfigTools/uMCUConfigTools2.jpg" alt="uMCUConfigTools2"></p>
+<p><strong>&#x662F;&#x5426;&#x5BFC;&#x5165;&#x914D;&#x7F6E;&#xFF0C;&#x9009;&#x62E9;&#x5426;</strong></p>
+<p><img src="../../imgs/MCUConfigTools/uMCUConfigTools3.jpg" alt="uMCUConfigTools3"></p>
+<p><strong>&#x4ECE;&#x65F6;&#x949F;&#x8868;&#x4E2D;&#x53EF;&#x770B;&#x5230;&#x9ED8;&#x8BA4;&#x7684;&#x65F6;&#x949F;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x5728;&#x8FD9;&#x91CC;&#x4FEE;&#x6539;&#x65F6;&#x949F;&#x914D;&#x7F6E;</strong></p>
+<p><img src="../../imgs/MCUConfigTools/uMCUConfigTools4.jpg" alt="uMCUConfigTools4"></p>
+<p><strong>&#x4ECE;&#x65F6;&#x949F;&#x8868;&#x663E;&#x793A;&#x56FE;&#x53EF;&#x770B;&#x5230;&#x9ED8;&#x8BA4;&#x7684;&#x65F6;&#x949F;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x5728;&#x8FD9;&#x91CC;&#x4FEE;&#x6539;&#x65F6;&#x949F;&#x914D;&#x7F6E;</strong></p>
+<p><img src="../../imgs/MCUConfigTools/uMCUConfigTools5.jpg" alt="uMCUConfigTools5"></p>
+<p><strong>&#x4FEE;&#x6539;&#x540E;&#x7684;&#x65F6;&#x949F;&#x914D;&#x7F6E;&#xFF0C;&#x4ECE;&#x53F3;&#x8FB9;&#x7684;&#x5DE5;&#x5177;&#x680F;&#x4E2D;&#x70B9;&#x51FB;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x67E5;&#x770B;&#x751F;&#x6210;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x70B9;&#x51FB;&#x53F3;&#x65B9;&#x7684;&#x5BFC;&#x51FA;&#x5C0F;&#x6309;&#x94AE;&#x53EF;&#x5C06;&#x6E90;&#x4EE3;&#x7801;&#x5BFC;&#x51FA;&#x52A0;&#x8F7D;&#x5230;&#x4EFB;&#x610F;&#x7684;&#x5DE5;&#x7A0B;&#x4E2D;</strong></p>
+<p><img src="../../imgs/MCUConfigTools/uMCUConfigTools6.jpg" alt="uMCUConfigTools6"></p>
+<p><strong>&#x9009;&#x62E9;&#x5BFC;&#x51FA;&#x65F6;&#x949F;&#x6E90;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x70B9;&#x51FB;&#x5B8C;&#x6210;&#xFF0C;&#x53EF;&#x5728;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E2D;&#x67E5;&#x770B;&#x88AB;&#x5BFC;&#x51FA;&#x7684;&#x6587;&#x4EF6;</strong></p>
+<p><img src="../../imgs/MCUConfigTools/uMCUConfigTools7.jpg" alt="uMCUConfigTools7"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="SDKDownload.html" class="navigation navigation-prev " aria-label="Previous page: 4.3.下载 MCUXpresso SDK">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Debug.html" class="navigation navigation-next " aria-label="Next page: 4.5.使用 MCUXpresso IDE 调试代码">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.4.使用 MCUXpresso Config Tools 生成代码","level":"1.4.4","depth":2,"next":{"title":"4.5.使用 MCUXpresso IDE 调试代码","level":"1.4.5","depth":2,"path":"MCUIDE/MCUXpresso/Debug.md","ref":"MCUIDE/MCUXpresso/Debug.md","articles":[]},"previous":{"title":"4.3.下载 MCUXpresso SDK","level":"1.4.3","depth":2,"path":"MCUIDE/MCUXpresso/SDKDownload.md","ref":"MCUIDE/MCUXpresso/SDKDownload.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MCUIDE/MCUXpresso/MCUConfigToolsUserManual.md","mtime":"2019-04-03T01:44:42.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-03T00:27:43.453Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
