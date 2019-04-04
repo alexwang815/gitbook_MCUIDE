@@ -6,11 +6,11 @@
 
 ---
 
-###Step 1.搜索你要下载的 arm 芯片，在这里以 M64 为例
+###Step 1.搜索你要下载的 arm 芯片，在这里以 NXP MKV30F64xxx10 为例
 
 ![keilPacks1](../../imgs/KEIL/keilPacks1.jpg)
 
-###Step 2.选择 MD5-NXP FRDM-K64F
+###Step 2.选择 MD5-NXP MKV30F64xxx10
 
 ![keilPacks2](../../imgs/KEIL/keilPacks2.jpg)
 
@@ -18,7 +18,7 @@
 
 ![keilPacks3](../../imgs/KEIL/keilPacks3.jpg)
 
-###Step 4.点击 Accept
+###Step 4.点击 OK
 
 ![keilPacks4](../../imgs/KEIL/keilPacks4.jpg)
 
@@ -26,6 +26,10 @@
 
 ![keilPacks5](../../imgs/KEIL/keilPacks5.jpg)
 
-###Step 6.点击 Finish
+###Step 6.选择 I agree，点击 Next
 
 ![keilPacks6](../../imgs/KEIL/keilPacks6.jpg)
+
+###Step 7.点击 Finish
+
+![keilPacks7](../../imgs/KEIL/keilPacks7.jpg)
