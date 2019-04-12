@@ -200,7 +200,7 @@
                 <a href="Keil/board.html">
             
                     
-                    2.4.3.使用 MCUXpresso Config Tools 生成时钟、引脚文件
+                    2.4.3.使用 MCUXpresso Config Tools 生成代码
             
                 </a>
             
@@ -479,6 +479,43 @@
                                 <p><img src="../imgs/wpiLogo.jpg" alt="wpiLogo"></p>
 <h1 id="4&#x57FA;&#x4E8E;-nxp-&#x7684;-mcuxpresso-&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;">4.&#x57FA;&#x4E8E; NXP &#x7684; MCUXpresso &#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
 <hr>
+<h3 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h3>
+<p>MCUXpresso IDE &#x4E3A;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5E26;&#x6765;&#x4E86;&#x4E00;&#x4E2A;&#x6613;&#x4E8E;&#x4F7F;&#x7528;&#x7684;&#x57FA;&#x4E8E; eclipse &#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x57FA;&#x4E8E; Arm&#xAE; Cortex&#xAE;-M &#x5185;&#x6838;&#x7684;&#x6069;&#x667A;&#x6D66; MCU&#xFF0C;&#x5305;&#x62EC; LPC &#x548C; Kinetis&#xAE; &#x5FAE;&#x63A7;&#x5236;&#x5668;&#x548C; i.MX RT &#x8DE8;&#x754C;&#x5904;&#x7406;&#x5668;&#x3002;MCUXpresso IDE &#x63D0;&#x4F9B;&#x9AD8;&#x7EA7;&#x7F16;&#x8F91;&#x3001;&#x7F16;&#x8BD1;&#x548C;&#x8C03;&#x8BD5;&#x529F;&#x80FD;&#xFF0C;&#x589E;&#x52A0;&#x4E86; MCU &#x7279;&#x5B9A;&#x7684;&#x8C03;&#x8BD5;&#x89C6;&#x56FE;&#x3001;&#x4EE3;&#x7801;&#x8DDF;&#x8E2A;&#x548C;&#x5206;&#x6790;&#x3001;&#x591A;&#x6838;&#x8C03;&#x8BD5;&#x548C;&#x96C6;&#x6210;&#x914D;&#x7F6E;&#x5DE5;&#x5177;&#x3002;MCUXpresso IDE &#x8C03;&#x8BD5;&#x8FDE;&#x63A5;&#x91C7;&#x7528;&#x6765;&#x81EA;&#x6069;&#x667A;&#x6D66;&#x3001;P&amp;E Micro&#xAE; &#x548C; SEGGER&#xAE; &#x7684;&#x4E1A;&#x754C;&#x9886;&#x5148;&#x7684;&#x5F00;&#x6E90;&#x548C;&#x5546;&#x7528;&#x786C;&#x4EF6;&#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x652F;&#x6301; Freedom&#x3001;&#x5854;&#x5F0F;&#x7CFB;&#x7EDF;&#x3001;i.MX RT&#x3001;LPCXpresso &#x548C;&#x5B9A;&#x5236;&#x5F00;&#x53D1;&#x677F;&#x3002;</p>
+<h3 id="&#x7279;&#x6027;">&#x7279;&#x6027;</h3>
+<ol>
+<li>&#x4E3A; Kinetis&#x3001;LPC MCU &#x548C; i.MX RT &#x8DE8;&#x754C;&#x5904;&#x7406;&#x5668;&#x63D0;&#x4F9B;&#x4EE3;&#x7801;&#x5927;&#x5C0F;&#x65E0;&#x9650;&#x5236;&#x3001;&#x6613;&#x4E8E;&#x4F7F;&#x7528;&#x7684; IDE &#x514D;&#x8D39;&#x7248;&#x3002;</li>
+<li>&#x4F7F;&#x7528; MCU &#x4E13;&#x7528;&#x7684;&#x8C03;&#x8BD5;&#x89C6;&#x56FE;&#x3001;&#x4EE3;&#x7801;&#x8DDF;&#x8E2A;&#x548C;&#x5206;&#x6790;&#x8FDB;&#x884C;&#x9AD8;&#x7EA7;&#x7F16;&#x8F91;&#x3001;&#x7F16;&#x8BD1;&#x548C;&#x7F16;&#x8F91;</li>
+<li>&#x96C6;&#x6210;&#x914D;&#x7F6E;&#x5DE5;&#x5177;&#xFF0C;&#x5305;&#x62EC;&#x5F15;&#x811A;&#x3001;&#x65F6;&#x949F;&#x548C;&#x5916;&#x8BBE;&#x5DE5;&#x5177;</li>
+<li>&#x4E1A;&#x754C;&#x6807;&#x51C6;&#x7684; GNU &#x5DE5;&#x5177;&#x94FE;&#x6765;&#x9009;&#x62E9;&#x5E93;&#xFF0C;&#x5982;&#x4F18;&#x5316;&#x7684; C &#x5E93;&#x6216;&#x6807;&#x51C6;&#x7684; GNU Newlib/Nano &#x5E93;&#xFF0C;&#x53EF;&#x652F;&#x6301;&#x534A;&#x6258;&#x7BA1;</li>
+<li>&#x6210;&#x529F;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x548C;&#x94FE;&#x63A5;&#x5668;&#x6587;&#x4EF6;</li>
+<li>&#x6309;&#x7167; LPCXpresso IDE v8.22&#xFF0C;&#x5185;&#x7F6E;&#x652F;&#x6301; LPC Cortex-M MCU</li>
+<li>&#x901A;&#x8FC7;&#x4E0E; MCUXpresso SDK &#x6570;&#x636E;&#x5305;&#x6574;&#x5408;&#x6765;&#x652F;&#x6301;&#x5176;&#x4ED6; LPC &#x548C; Kinetis MCU</li>
+<li>&#x652F;&#x6301; CMSIS-DAP &#x786C;&#x4EF6;&#x8C03;&#x8BD5;&#x5668;<blockquote>
+<blockquote>
+<p>&#x5305;&#x62EC;&#x5BF9; MTB &#x548C; ETB &#x6307;&#x4EE4;&#x8DDF;&#x8E2A;&#x7684;&#x652F;&#x6301;<br>
+&#x5305;&#x62EC;&#x652F;&#x6301; SWO &#x8DDF;&#x8E2A;&#x548C;&#x5206;&#x6790;(&#x4EC5;&#x901A;&#x8FC7; LPC-Link2)<br></p>
+</blockquote>
+</blockquote>
+</li>
+<li>&#x652F;&#x6301; P&amp;E &#x548C; Segger &#x786C;&#x4EF6;&#x8C03;&#x8BD5;&#x5668;<blockquote>
+<blockquote>
+<p>&#x5305;&#x62EC;&#x5BF9; MTB &#x548C; ETB &#x6307;&#x4EE4;&#x8DDF;&#x8E2A;&#x7684;&#x652F;&#x6301;<br>
+&#x5305;&#x62EC;&#x652F;&#x6301; SWO &#x8DDF;&#x8E2A;&#x548C;&#x5206;&#x6790;<br></p>
+</blockquote>
+</blockquote>
+</li>
+<li>GUI &#x95EA;&#x5B58;&#x7F16;&#x7A0B;&#x5DE5;&#x5177;&#x3001;&#x5916;&#x8BBE;&#x5BC4;&#x5B58;&#x5668;&#x89C6;&#x56FE;&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x89C6;&#x56FE;&#x3001;&#x6587;&#x672C;/&#x56FE;&#x5F62;&#x5B9E;&#x65F6;&#x53D8;&#x91CF;&#x89C6;&#x56FE;&#x3001;&#x9879;&#x76EE;&#x5411;&#x5BFC;&#x7B49;&#x7B49;</li>
+<li>&#x652F;&#x6301; FreeRTOS &#x611F;&#x77E5;&#x8C03;&#x8BD5;</li>
+<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BB8;&#x591A; Eclipse &#x63D2;&#x4EF6;&#x5B9E;&#x73B0;&#x6269;&#x5C55;</li>
+<li>&#x4E3B;&#x673A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF1A;<blockquote>
+<blockquote>
+<p>Microsoft&#xAE; Windows&#xAE; 7/8/10<br>
+Ubuntu Linux&#xAE; 16.04 LTS &#x53CA;&#x66F4;&#x9AD8;&#x7248;&#x672C;(&#x4EC5; 64 &#x4F4D;&#x4E3B;&#x673A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;)<br>
+Mac OS X 10.11 &#x53CA;&#x66F4;&#x9AD8;&#x7248;&#x672C;<br></p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
 
                                 
                                 </section>
@@ -522,7 +559,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.基于 NXP 的 MCUXpresso 开发环境搭建","level":"1.4","depth":1,"next":{"title":"4.1.下载并安装 MCUXpresso IDE","level":"1.4.1","depth":2,"path":"MCUIDE/MCUXpresso/MCUXpressoIDEDownload.md","ref":"MCUIDE/MCUXpresso/MCUXpressoIDEDownload.md","articles":[]},"previous":{"title":"3.4.HelloWorld 示例","level":"1.3.4","depth":2,"path":"MCUIDE/IAR/HelloWorld.md","ref":"MCUIDE/IAR/HelloWorld.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MCUIDE/MCUXpressoIDE.md","mtime":"2019-04-02T09:33:13.210Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-08T06:32:33.110Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.基于 NXP 的 MCUXpresso 开发环境搭建","level":"1.4","depth":1,"next":{"title":"4.1.下载并安装 MCUXpresso IDE","level":"1.4.1","depth":2,"path":"MCUIDE/MCUXpresso/MCUXpressoIDEDownload.md","ref":"MCUIDE/MCUXpresso/MCUXpressoIDEDownload.md","articles":[]},"previous":{"title":"3.4.HelloWorld 示例","level":"1.3.4","depth":2,"path":"MCUIDE/IAR/HelloWorld.md","ref":"MCUIDE/IAR/HelloWorld.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MCUIDE/MCUXpressoIDE.md","mtime":"2019-04-11T07:29:23.485Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T00:39:42.906Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

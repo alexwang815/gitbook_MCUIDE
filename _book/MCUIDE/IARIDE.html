@@ -200,7 +200,7 @@
                 <a href="Keil/board.html">
             
                     
-                    2.4.3.使用 MCUXpresso Config Tools 生成时钟、引脚文件
+                    2.4.3.使用 MCUXpresso Config Tools 生成代码
             
                 </a>
             
@@ -479,6 +479,19 @@
                                 <p><img src="../imgs/wpiLogo.jpg" alt="wpiLogo"></p>
 <h1 id="3&#x57FA;&#x4E8E;-nxp-&#x7684;-iar-&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;">3.&#x57FA;&#x4E8E; NXP &#x7684; IAR &#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
 <hr>
+<h3 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h3>
+<p>IAR Embedded Workbench &#x662F;&#x745E;&#x5178; IAR Systems &#x516C;&#x53F8;&#x4E3A; &#x5FAE;&#x5904;&#x7406;&#x5668;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;(&#x4E0B;&#x9762;&#x7B80;&#x79F0; IAR EW),&#x652F;&#x6301; ARM&#xFF0C;AVR&#xFF0C;MSP430 &#x7B49;&#x82AF;&#x7247;&#x5185;&#x6838;&#x5E73;&#x53F0;&#x3002;</p>
+<h3 id="&#x7279;&#x6027;">&#x7279;&#x6027;</h3>
+<ol>
+<li>&#x9AD8;&#x5EA6;&#x4F18;&#x5316;&#x7684; IAR ARM C/C++ Compiler</li>
+<li>IAR ARM Assembler</li>
+<li>&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684; IAR XLINK Linker</li>
+<li>IAR XAR &#x548C; XLIB &#x5EFA;&#x5E93;&#x7A0B;&#x5E8F;&#x548C; IAR DLIB C/C++&#x8FD0;&#x884C;&#x5E93;</li>
+<li>&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x7684;&#x7F16;&#x8F91;&#x5668;</li>
+<li>&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x5668;</li>
+<li>&#x547D;&#x4EE4;&#x884C;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;</li>
+<li>IAR C-SPY &#x8C03;&#x8BD5;&#x5668;(&#x5148;&#x8FDB;&#x7684;&#x9AD8;&#x7EA7;&#x8BED;&#x8A00;&#x8C03;&#x8BD5;&#x5668;&#xFF09;</li>
+</ol>
 
                                 
                                 </section>
@@ -522,7 +535,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.基于 NXP 的 IAR 开发环境搭建","level":"1.3","depth":1,"next":{"title":"3.1.下载并安装 IAR","level":"1.3.1","depth":2,"path":"MCUIDE/IAR/IARDownload.md","ref":"MCUIDE/IAR/IARDownload.md","articles":[]},"previous":{"title":"2.4.4.HelloWorld 示例","level":"1.2.4.4","depth":3,"path":"MCUIDE/Keil/HelloWorld.md","ref":"MCUIDE/Keil/HelloWorld.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MCUIDE/IARIDE.md","mtime":"2019-04-02T09:32:53.458Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-08T06:32:33.110Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.基于 NXP 的 IAR 开发环境搭建","level":"1.3","depth":1,"next":{"title":"3.1.下载并安装 IAR","level":"1.3.1","depth":2,"path":"MCUIDE/IAR/IARDownload.md","ref":"MCUIDE/IAR/IARDownload.md","articles":[]},"previous":{"title":"2.4.4.HelloWorld 示例","level":"1.2.4.4","depth":3,"path":"MCUIDE/Keil/HelloWorld.md","ref":"MCUIDE/Keil/HelloWorld.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MCUIDE/IARIDE.md","mtime":"2019-04-12T06:23:13.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T00:39:42.906Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

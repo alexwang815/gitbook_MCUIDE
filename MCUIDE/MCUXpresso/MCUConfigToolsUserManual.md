@@ -1,6 +1,6 @@
 ![wpiLogo](../../imgs/wpiLogo.jpg)
 
-# 4.4.使用 MCUXpresso Config Tools 生成时钟源代码
+# 4.4.使用 MCUXpresso Config Tools 生成代码
 
 ---
 

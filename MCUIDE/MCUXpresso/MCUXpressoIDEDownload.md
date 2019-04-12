@@ -4,6 +4,8 @@
 
 [MCUXpressoIDE 下载页面](https://www.nxp.com/support/developer-resources/software-development-tools/mcuxpresso-software-and-tools/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
 
+**需注册 NXP 官网账号**
+
 ---
 
 ###Step 1.进入下载页面，点击 Download

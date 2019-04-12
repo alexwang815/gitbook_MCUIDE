@@ -4,6 +4,8 @@
 
 [MCUXpressoConfigTools 下载页面](https://www.nxp.com/cn/support/developer-resources/software-development-tools/mcuxpresso-software-and-tools/mcuxpresso-config-tools-pins-clocks-peripherals:MCUXpresso-Config-Tools?tab=Design_Tools_Tab)
 
+**需注册 NXP 官网账号**
+
 ---
 
 ###Step 1.进入下载页面，点击下载
