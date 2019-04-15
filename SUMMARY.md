@@ -16,7 +16,7 @@
   - [3.3.IAR 工程搭建](MCUIDE/IAR/Code.md)
     - [3.3.1.添加目录结构树](MCUIDE/IAR/CodeStruct.md)
     - [3.3.2.修改 Options](MCUIDE/IAR/CodeOptions.md)
-    - [3.3.3.使用 MCUXpresso Config Tools 生成代码](MCUIDE/IAR/board.md)
+    - [3.3.3.使用 MCUXpresso Config Tools 生成代码](MCUIDE/IAR/Board.md)
     - [3.3.4.HelloWorld 示例](MCUIDE/IAR/HelloWorld.md)
 - [4.基于 NXP 的 MCUXpresso 开发环境搭建](MCUIDE/MCUXpressoIDE.md)
   - [4.1.下载并安装 MCUXpresso IDE](MCUIDE/MCUXpresso/MCUXpressoIDEDownload.md)
