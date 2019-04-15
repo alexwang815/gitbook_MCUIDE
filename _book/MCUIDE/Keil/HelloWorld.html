@@ -271,12 +271,26 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../IAR/Board.html">
+        <li class="chapter " data-level="1.3.3" data-path="../IAR/Code.html">
             
-                <a href="../IAR/Board.html">
+                <a href="../IAR/Code.html">
             
                     
-                    3.3.使用 MCUXpresso Config Tools 生成代码
+                    3.3.IAR 工程搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../IAR/CodeStruct.html">
+            
+                <a href="../IAR/CodeStruct.html">
+            
+                    
+                    3.3.1.添加目录结构树
             
                 </a>
             
@@ -284,16 +298,47 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../IAR/HelloWorld.html">
+        <li class="chapter " data-level="1.3.3.2" data-path="../IAR/CodeOptions.html">
             
-                <a href="../IAR/HelloWorld.html">
+                <a href="../IAR/CodeOptions.html">
             
                     
-                    3.4.HelloWorld 示例
+                    3.3.2.修改 Options
             
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../IAR/board.html">
+            
+                <a href="../IAR/board.html">
+            
+                    
+                    3.3.3.使用 MCUXpresso Config Tools 生成代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../IAR/HelloWorld.html">
+            
+                <a href="../IAR/HelloWorld.html">
+            
+                    
+                    3.3.4.HelloWorld 示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -497,7 +542,7 @@ void BOARD_InitDebugConsole(void) {
     uint32_t uartClkSrcFreq = BOARD_DEBUG_UART_CLK_FREQ;
     DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, BOARD_DEBUG_UART_BAUDRATE, BOARD_DEBUG_UART_TYPE, uartClkSrcFreq);
 }
-</code></pre><h3 id="step-3&#x70B9;&#x51FB;&#x5DE5;&#x5177;&#x680F;&#x7684;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;-text-&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x4FDD;&#x5B58;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x5B57;&#x4FEE;&#x6539;&#x6210;-mainc&#xFF0C;&#x4FDD;&#x5B58;&#x5230;&#x5DE5;&#x7A0B;&#x7684;&#x6839;&#x76EE;&#x5F55;">Step 3.&#x70B9;&#x51FB;&#x5DE5;&#x5177;&#x680F;&#x7684;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7A7A;&#x767D; Text &#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x4FDD;&#x5B58;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x5B57;&#x4FEE;&#x6539;&#x6210; main.c&#xFF0C;&#x4FDD;&#x5B58;&#x5230;&#x5DE5;&#x7A0B;&#x7684;&#x6839;&#x76EE;&#x5F55;**</h3>
+</code></pre><h3 id="step-3&#x70B9;&#x51FB;&#x5DE5;&#x5177;&#x680F;&#x7684;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;-text-&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x4FDD;&#x5B58;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x5B57;&#x4FEE;&#x6539;&#x6210;-mainc&#xFF0C;&#x4FDD;&#x5B58;&#x5230;&#x5DE5;&#x7A0B;&#x7684;&#x6839;&#x76EE;&#x5F55;">Step 3.&#x70B9;&#x51FB;&#x5DE5;&#x5177;&#x680F;&#x7684;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7A7A;&#x767D; Text &#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x4FDD;&#x5B58;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x5B57;&#x4FEE;&#x6539;&#x6210; main.c&#xFF0C;&#x4FDD;&#x5B58;&#x5230;&#x5DE5;&#x7A0B;&#x7684;&#x6839;&#x76EE;&#x5F55;</h3>
 <p><img src="../../imgs/KEIL/helloWorld1.jpg" alt="helloWorld1"></p>
 <h3 id="step-4&#x53CC;&#x51FB;&#x5DE5;&#x7A0B;&#x7ED3;&#x6784;&#x6811;&#x7684;-souce-&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5C06;-mainc-&#x6587;&#x4EF6;&#x5F15;&#x5165;">Step 4.&#x53CC;&#x51FB;&#x5DE5;&#x7A0B;&#x7ED3;&#x6784;&#x6811;&#x7684; Souce &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5C06; main.c &#x6587;&#x4EF6;&#x5F15;&#x5165;</h3>
 <p><img src="../../imgs/KEIL/helloWorld2.jpg" alt="helloWorld2"></p>
@@ -563,7 +608,7 @@ int main(void)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.4.4.HelloWorld 示例","level":"1.2.4.4","depth":3,"next":{"title":"3.基于 NXP 的 IAR 开发环境搭建","level":"1.3","depth":1,"path":"MCUIDE/IARIDE.md","ref":"MCUIDE/IARIDE.md","articles":[{"title":"3.1.下载并安装 IAR","level":"1.3.1","depth":2,"path":"MCUIDE/IAR/IARDownload.md","ref":"MCUIDE/IAR/IARDownload.md","articles":[]},{"title":"3.2.下载 IAR SDK","level":"1.3.2","depth":2,"path":"MCUIDE/IAR/SDKDownload.md","ref":"MCUIDE/IAR/SDKDownload.md","articles":[]},{"title":"3.3.使用 MCUXpresso Config Tools 生成代码","level":"1.3.3","depth":2,"path":"MCUIDE/IAR/Board.md","ref":"MCUIDE/IAR/Board.md","articles":[]},{"title":"3.4.HelloWorld 示例","level":"1.3.4","depth":2,"path":"MCUIDE/IAR/HelloWorld.md","ref":"MCUIDE/IAR/HelloWorld.md","articles":[]}]},"previous":{"title":"2.4.3.使用 MCUXpresso Config Tools 生成代码","level":"1.2.4.3","depth":3,"path":"MCUIDE/Keil/board.md","ref":"MCUIDE/Keil/board.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MCUIDE/Keil/HelloWorld.md","mtime":"2019-04-08T06:07:34.788Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T06:56:58.088Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.4.4.HelloWorld 示例","level":"1.2.4.4","depth":3,"next":{"title":"3.基于 NXP 的 IAR 开发环境搭建","level":"1.3","depth":1,"path":"MCUIDE/IARIDE.md","ref":"MCUIDE/IARIDE.md","articles":[{"title":"3.1.下载并安装 IAR","level":"1.3.1","depth":2,"path":"MCUIDE/IAR/IARDownload.md","ref":"MCUIDE/IAR/IARDownload.md","articles":[]},{"title":"3.2.下载 IAR SDK","level":"1.3.2","depth":2,"path":"MCUIDE/IAR/SDKDownload.md","ref":"MCUIDE/IAR/SDKDownload.md","articles":[]},{"title":"3.3.IAR 工程搭建","level":"1.3.3","depth":2,"path":"MCUIDE/IAR/Code.md","ref":"MCUIDE/IAR/Code.md","articles":[{"title":"3.3.1.添加目录结构树","level":"1.3.3.1","depth":3,"path":"MCUIDE/IAR/CodeStruct.md","ref":"MCUIDE/IAR/CodeStruct.md","articles":[]},{"title":"3.3.2.修改 Options","level":"1.3.3.2","depth":3,"path":"MCUIDE/IAR/CodeOptions.md","ref":"MCUIDE/IAR/CodeOptions.md","articles":[]},{"title":"3.3.3.使用 MCUXpresso Config Tools 生成代码","level":"1.3.3.3","depth":3,"path":"MCUIDE/IAR/board.md","ref":"MCUIDE/IAR/board.md","articles":[]},{"title":"3.3.4.HelloWorld 示例","level":"1.3.3.4","depth":3,"path":"MCUIDE/IAR/HelloWorld.md","ref":"MCUIDE/IAR/HelloWorld.md","articles":[]}]}]},"previous":{"title":"2.4.3.使用 MCUXpresso Config Tools 生成代码","level":"1.2.4.3","depth":3,"path":"MCUIDE/Keil/board.md","ref":"MCUIDE/Keil/board.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MCUIDE/Keil/HelloWorld.md","mtime":"2019-04-15T06:38:31.301Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-15T07:11:12.972Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

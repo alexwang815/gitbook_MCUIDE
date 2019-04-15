@@ -28,7 +28,7 @@ void BOARD_InitDebugConsole(void) {
 
 ```
 
-###Step 3.点击工具栏的新建文件，生成一个空白 Text 文件，然后点击保存，文件名字修改成 main.c，保存到工程的根目录\*\*
+###Step 3.点击工具栏的新建文件，生成一个空白 Text 文件，然后点击保存，文件名字修改成 main.c，保存到工程的根目录
 
 ![helloWorld1](../../imgs/KEIL/helloWorld1.jpg)
 
