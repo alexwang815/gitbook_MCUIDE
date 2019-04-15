@@ -4,6 +4,8 @@
 
 [SDK 下载地址](https://mcuxpresso.nxp.com/en/select)
 
+**需注册 NXP 官网账号**
+
 ---
 
 ###Step 1.进入下载地址,搜索你要下载芯片的 SDK，这里以 MKV30F64xxx10 为例，选择 MKV30F64xxx10，右方会显示该芯片的信息，然后点击 Build MCUXpresso SDK
