@@ -57,6 +57,10 @@ int main(void)
 }
 ```
 
-###Step 6.编译，烧录代码进板子，串口助手打印以下信息，完成工程文件的搭建
+###Step 6.编译，烧录代码进板子
+
+![helloWorld4](../../imgs/KEIL/helloWorld4.jpg)
+
+###Step 7.串口助手打印以下信息，完成工程文件的搭建
 
 ![helloWorld3](../../imgs/KEIL/helloWorld3.jpg)

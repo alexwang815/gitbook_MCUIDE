@@ -56,6 +56,9 @@ int main(void)
 }
 ```
 
-###Step 6.编译，烧录代码
+###Step 6.工具栏编译，烧录代码
+![code22](../../imgs/IAR/code22.jpg)
+
+###Step 7.打开串口调试助手，出现以下界面，则工程搭建完成
 
 ![code21](../../imgs/IAR/code21.jpg)
